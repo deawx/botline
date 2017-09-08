@@ -11,6 +11,7 @@ class Database
 	public function __construct()
 	{
 		$this->db = new mysqli('localhost','siamback_botline','n6&wJ2t2','siamback_botline');
+		$this->db->query('SET NAMES UTF8');
 	}
 
 }
